@@ -1,5 +1,5 @@
 ###Testiong the function
-from function import *
+from functions import *
 import random
 
 #Testing greet
