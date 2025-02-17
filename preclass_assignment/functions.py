@@ -1,26 +1,26 @@
-#1
-name=input("what's your name ?")
-def greet(name="world"):
-    print(f"Hello, {name}!")
-greet(name)
+###Exercies for week 0 in PiWE
 
-#2
+#Ex 1
+def greet(name):
+    """Returns in terminal a greet to the given name"""
+    return print(f"Hello, {name}!")
 
-def goldilocks(bed_length):
-    if bed_length < 140:
-        print("The bed is too small!")
-    elif bed_length > 150:
-        print("The bed is too large!")
+#Ex 2
+def goldilocks(bed_size):
+    """define if the bed_size is good for goldilocks standarts"""
+    if bed_size < 140:
+        print("Too small!")
+    if bed_size > 150:
+        print("Too large!")
     else:
-        print("Goldilocks is happy with the bed!")
-goldilocks(145)
+        print("Just right. :)")
 
 #3
 def square_list(numbers):
     return [number ** 2 for number in numbers]
-nums = [1, 2, 3, 4, 5]
-squared = square_list(nums)
-print(squared)  # Output: [1, 4, 9, 16, 25]
+numbers = [2,3,9]
+squared = square_list(numbers)
+#print(squared)  # Output: [1, 4, 9, 16, 25]
 
 #4
 def fibonacci_stop(max_value):
@@ -35,7 +35,7 @@ def fibonacci_stop(max_value):
         fib_sequence.append(next_fib)
     
     return fib_sequence
-print(fibonacci_stop(4))
+print(fibonacci_stop(50))
 
 #5
 def clean_pitch(pitch_angles, status_signals):
@@ -51,5 +51,4 @@ pitch_angles = [30, 95, -10, 60, 45]
 status_signals = [0, 1, 1, 0, 2]
 
 cleaned = clean_pitch(pitch_angles, status_signals)
-print(cleaned)  # Output: [30, -999, -999, 60, 45]
-
+#print(cleaned)  # Output: [30, -999, -999, 60, 45]

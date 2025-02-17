@@ -18,9 +18,13 @@ def test_greet(capsys):
 def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
+    bed_size=180
     # when
+    fxn.goldilocks(bed_size)
+    captured=capsys.readouterr()
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == "Too large!\n"
+    #assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
 
 
 def test_square_list():
@@ -37,15 +41,21 @@ def test_square_list():
 def test_fibonacci_stop():
     """Check fibonacci functions works as expected."""
     # given
-    # given
+    result = fxn.fibonacci_stop(50)
     # when
+    exp_out=[1, 1, 2, 3, 5, 8, 13, 21, 34]
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests fibonacci_stop
+    assert result==exp_out  # TODO! Update the contents of this function so it correctly tests fibonacci_stop
 
 
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
     # given
+    pitch_angles = [30, 95, -10, 60, 45]
+    status_signals = [0, 1, 1, 0, 0]
     # when
+    result = fxn.clean_pitch(pitch_angles, status_signals)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
+    exp_out = [30, -999, -999, 60, 45]
+    assert result == exp_out
+    # assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
