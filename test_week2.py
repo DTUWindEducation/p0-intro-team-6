@@ -31,8 +31,8 @@ def test_square_list():
     out = fxn.square_list(inp)  # actual output
     # then
     assert exp_out == out  # throw error if actual and expected output don't match
-
-
+    
+    
 def test_fibonacci_stop():
     """Check fibonacci functions works as expected."""
     # given

@@ -33,7 +33,7 @@ def fibonacci_stop(max_val):
         
     return fib_list
 
-def clean_pich(measurement, status):
+def clean_pitch(measurement, status):
     """Clean the measurement depending on the status signal list"""
 
     if len(measurement)!=len(status):

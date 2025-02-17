@@ -40,4 +40,4 @@ rd_signal = random.choices([0,1], k=10)
 
 print(f"For measurement: {rd_measurement}")
 print(f"and theses signal status: {rd_signal}")
-print(f"The cleaned picth is {clean_pich(measurement=rd_measurement, status=rd_signal)}")
+print(f"The cleaned picth is {clean_pitch(measurement=rd_measurement, status=rd_signal)}")
