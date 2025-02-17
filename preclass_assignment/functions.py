@@ -35,7 +35,7 @@ def fibonacci_stop(max_value):
         fib_sequence.append(next_fib)
     
     return fib_sequence
-#print(fibonacci_stop(4))
+print(fibonacci_stop(50))
 
 #5
 def clean_pitch(pitch_angles, status_signals):
@@ -52,4 +52,3 @@ status_signals = [0, 1, 1, 0, 2]
 
 cleaned = clean_pitch(pitch_angles, status_signals)
 #print(cleaned)  # Output: [30, -999, -999, 60, 45]
-
