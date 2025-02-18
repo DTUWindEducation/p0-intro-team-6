@@ -2,17 +2,17 @@
 # Ex 1
 def greet(name):
     """Returns in terminal a greet to the given name"""
-    return f"Hello, {name}!"
+    print(f"Hello, {name}!")
 
 # Ex 2
 def goldilocks(bed_size):
     """define if the bed_size is good for goldilocks standarts"""
     if bed_size < 140:
-        return "Too small!"
+        print("Too small!")
     elif bed_size > 150:
-        return "Too large!"
+        print("Too large!")
     else:
-        return "Just right. :)"
+        print("Just right. :)")
 
 # Ex 3
 def square_list(list):

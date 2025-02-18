@@ -4,13 +4,13 @@
 from functions import *
 
 # Ex 1
-print(greet('world'))
+greet('world')
 
 # Ex 2
-print(goldilocks(139))
-print(goldilocks(140))
-print(goldilocks(151))
-print(goldilocks(150))
+goldilocks(139)
+goldilocks(140)
+goldilocks(151)
+goldilocks(150)
 
 # Ex 3
 print(square_list([1, 2, 3]))
