@@ -18,9 +18,14 @@ def test_greet(capsys):
 def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
+    inp = 139
+    exp_out = 'Too small!\n'
     # when
+    fxn.goldilocks(inp)
+    captured = capsys.readouterr()  # capture what would have been printed to screen
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == exp_out  # check that the greeting was what we expect
+
 
 
 def test_square_list():
@@ -48,6 +53,9 @@ def test_fibonacci_stop():
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
     # given
+    measurement, status = [-1, 2, 6, 95], [1, 0, 0, 0]
+    exp_out = [-999, 2, 6, 95]
     # when
+    out = fxn.clean_pitch(measurement, status)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
+    assert exp_out == out # throw error if actual and expected output don't match
