@@ -37,11 +37,13 @@ def test_square_list():
 def test_fibonacci_stop():
     """Check fibonacci functions works as expected."""
     # given
+    inp = 30
     # given
+    exp_out = [1, 1, 2, 3, 5, 8, 13, 21]
     # when
+    out = fxn.fibonacci_stop(30)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests fibonacci_stop
-
+    assert exp_out==out 
 
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
