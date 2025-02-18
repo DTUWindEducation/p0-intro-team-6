@@ -41,9 +41,9 @@ def test_fibonacci_stop():
     # given
     exp_out = [1, 1, 2, 3, 5, 8, 13, 21]
     # when
-    out = fxn.fibonacci_stop(30)
+    out = fxn.fibonacci_stop(inp)
     # then
-    assert exp_out==out 
+    assert exp_out == out # throw error if actual and expected output don't match
 
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
